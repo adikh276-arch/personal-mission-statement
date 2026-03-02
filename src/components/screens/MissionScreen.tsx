@@ -21,9 +21,9 @@ const MissionScreen = ({ data, onEdit, onHome, onChange }: MissionScreenProps) =
   const handleSave = () => {
     toast.success("Your mission statement has been saved.", {
       style: {
-        background: "hsl(150, 14%, 85%)",
-        color: "hsl(160, 20%, 18%)",
-        border: "1px solid hsl(150, 10%, 68%)",
+        background: "hsl(300, 18%, 95%)",
+        color: "hsl(280, 15%, 22%)",
+        border: "1px solid hsl(280, 15%, 82%)",
       },
     });
   };
