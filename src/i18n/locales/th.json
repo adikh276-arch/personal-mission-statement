@@ -5,6 +5,7 @@
   "intro_breath": "หายใจเข้าช้าๆ หนึ่งครั้ง",
   "intro_no_wrong": "ไม่มีคำตอบที่ถูกหรือผิดในเรื่องนี้",
   "intro_begin": "เริ่ม",
+  "intro_past_reflections": "ภาพสะท้อนในอดีต",
   "values_title": "อะไรคือสิ่งที่คุณรู้สึกว่าสำคัญในตอนนี้?",
   "values_subtitle": "เลือกคุณค่า 1-3 อย่างที่ช่วยให้คุณรู้สึกมั่นคง",
   "values_next": "ต่อไป",
@@ -25,7 +26,7 @@
   "value_purpose": "วัตถุประสงค์",
   "value_joy": "จอย",
   "reflection_title": "เติมประโยคให้สมบูรณ์",
-  "reflection_being_label": "แม้ในวันที่ยากลำบาก ฉันก็อยากเป็นคนที่ ________.",
+  "reflection_being_label": "แม้ในวันที่ยากลำบาก ฉันก็อยากเป็นคนที่ ________",
   "reflection_being_placeholder": "เช่น ตั้งใจฟังอย่างอดทน",
   "reflection_life_label": "ตอนนี้ ฉันอยากให้ชีวิตของฉันรู้สึก ________ มากขึ้น",
   "reflection_life_placeholder": "เช่น สงบสุขและเชื่อมโยงกัน",
@@ -40,7 +41,12 @@
   "mission_return_whenever": "คุณสามารถกลับมาดูได้ทุกเมื่อที่ต้องการคำแนะนำ",
   "mission_save": "บันทึก",
   "mission_edit": "แก้ไข",
-  "mission_go_home": "กลับสู่หน้าหลัก",
+  "mission_go_home": "กลับสู่หน้าแรก",
   "mission_my_values": "ค่านิยมของฉัน",
-  "mission_and": ", และ "
+  "mission_and": ", และ ",
+  "history_title": "บันทึกความคิดของคุณ",
+  "history_empty": "คุณยังไม่ได้บันทึกคำแถลงพันธกิจใดๆ เลย",
+  "history_empty_hint": "เมื่อคุณพร้อมแล้ว สร้างบัญชีขึ้นมา แล้วมันจะปรากฏขึ้นที่นี่",
+  "history_back": "ย้อนกลับ",
+  "history_delete_aria": "ลบข้อความสะท้อนนี้"
 }

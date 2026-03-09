@@ -5,6 +5,7 @@
   "intro_breath": "Prenez une lente inspiration.",
   "intro_no_wrong": "Il n'y a pas de bonnes ou de mauvaises réponses.",
   "intro_begin": "Commencer",
+  "intro_past_reflections": "Réflexions passées",
   "values_title": "Qu'est-ce qui vous semble important en ce moment ?",
   "values_subtitle": "Choisissez 1 à 3 valeurs qui vous rassurent.",
   "values_next": "Suivant",
@@ -42,5 +43,10 @@
   "mission_edit": "Modifier",
   "mission_go_home": "Retour à l'accueil",
   "mission_my_values": "mes valeurs",
-  "mission_and": ", et "
+  "mission_and": ", et ",
+  "history_title": "Vos réflexions enregistrées",
+  "history_empty": "Vous n'avez encore enregistré aucun énoncé de mission.",
+  "history_empty_hint": "Lorsque vous serez prêt, créez-en un et il apparaîtra ici.",
+  "history_back": "Retour",
+  "history_delete_aria": "Supprimer ce reflet"
 }

@@ -5,6 +5,7 @@
   "intro_breath": "Einmal tief durchatmen.",
   "intro_no_wrong": "Hier gibt es keine richtigen oder falschen Antworten.",
   "intro_begin": "Beginnen",
+  "intro_past_reflections": "Rückblicke auf die Vergangenheit",
   "values_title": "Was erscheint Ihnen im Moment wichtig?",
   "values_subtitle": "Wählen Sie 1–3 Werte, die Ihnen ein Gefühl der Stabilität vermitteln.",
   "values_next": "Nächste",
@@ -42,5 +43,10 @@
   "mission_edit": "Bearbeiten",
   "mission_go_home": "Zur Startseite",
   "mission_my_values": "meine Werte",
-  "mission_and": ", Und "
+  "mission_and": ", Und ",
+  "history_title": "Ihre gespeicherten Reflexionen",
+  "history_empty": "Du hast noch keine Missionsanweisungen gespeichert.",
+  "history_empty_hint": "Wenn Sie bereit sind, erstellen Sie einen, und er wird hier erscheinen.",
+  "history_back": "Geh zurück",
+  "history_delete_aria": "Diese Spiegelung löschen"
 }

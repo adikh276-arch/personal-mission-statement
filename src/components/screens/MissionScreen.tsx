@@ -4,6 +4,7 @@ import MissionButton from "@/components/MissionButton";
 import { MissionData } from "@/pages/Index";
 import { toast } from "sonner";
 import { useTranslation } from "react-i18next";
+import type { SavedMission } from "@/components/screens/HistoryScreen";
 
 interface MissionScreenProps {
   data: MissionData;
@@ -29,6 +30,16 @@ const MissionScreen = ({ data, onEdit, onHome, onChange }: MissionScreenProps) =
   }, [t, valuesText, data.beingSomeoneWho, data.lifeFeelMore]);
 
   const handleSave = () => {
+    const existing: SavedMission[] = JSON.parse(localStorage.getItem("saved-missions") || "[]");
+    const newMission: SavedMission = {
+      id: Date.now().toString(),
+      statement,
+      values: data.values,
+      date: new Date().toISOString(),
+    };
+    const updated = [newMission, ...existing];
+    localStorage.setItem("saved-missions", JSON.stringify(updated));
+
     toast.success(t('mission_saved'), {
       style: {
         background: "hsl(300, 18%, 95%)",

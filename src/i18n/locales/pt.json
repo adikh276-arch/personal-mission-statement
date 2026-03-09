@@ -5,6 +5,7 @@
   "intro_breath": "Respire fundo e devagar.",
   "intro_no_wrong": "Aqui não há respostas certas ou erradas.",
   "intro_begin": "Começar",
+  "intro_past_reflections": "Reflexões do Passado",
   "values_title": "O que lhe parece importante neste momento?",
   "values_subtitle": "Escolha de 1 a 3 valores que lhe transmitam segurança.",
   "values_next": "Próximo",
@@ -42,5 +43,10 @@
   "mission_edit": "Editar",
   "mission_go_home": "Ir para a página inicial",
   "mission_my_values": "meus valores",
-  "mission_and": ", e "
+  "mission_and": ", e ",
+  "history_title": "Suas reflexões salvas",
+  "history_empty": "Você ainda não salvou nenhuma declaração de missão.",
+  "history_empty_hint": "Quando estiver pronto, crie um e ele aparecerá aqui.",
+  "history_back": "Volte",
+  "history_delete_aria": "Apague este reflexo"
 }

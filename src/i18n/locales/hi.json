@@ -5,6 +5,7 @@
   "intro_breath": "एक गहरी सांस लें।",
   "intro_no_wrong": "यहां कोई सही या गलत जवाब नहीं है।",
   "intro_begin": "शुरू",
+  "intro_past_reflections": "अतीत के प्रतिबिंब",
   "values_title": "इस समय सबसे महत्वपूर्ण क्या लगता है?",
   "values_subtitle": "ऐसे 1-3 मूल्यों का चयन करें जो आपको स्थिरता प्रदान करते हों।",
   "values_next": "अगला",
@@ -42,5 +43,10 @@
   "mission_edit": "संपादन करना",
   "mission_go_home": "होम पेज पर जाएं",
   "mission_my_values": "मेरे मूल्य",
-  "mission_and": ", और "
+  "mission_and": ", और ",
+  "history_title": "आपके सहेजे गए विचार",
+  "history_empty": "आपने अभी तक कोई मिशन स्टेटमेंट सेव नहीं किया है।",
+  "history_empty_hint": "जब आप तैयार हों, तो एक बनाएं और वह यहां दिखाई देगा।",
+  "history_back": "वापस जाओ",
+  "history_delete_aria": "इस प्रतिबिंब को हटाएँ"
 }

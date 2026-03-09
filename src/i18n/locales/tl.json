@@ -5,6 +5,7 @@
   "intro_breath": "Huminga nang dahan-dahan.",
   "intro_no_wrong": "Walang tama o maling sagot dito.",
   "intro_begin": "Simulan",
+  "intro_past_reflections": "Mga Nakaraang Pagninilay",
   "values_title": "Ano ang pakiramdam na mahalaga ngayon?",
   "values_subtitle": "Pumili ng 1–3 halaga na tila matibay.",
   "values_next": "Susunod",
@@ -42,5 +43,10 @@
   "mission_edit": "I-edit",
   "mission_go_home": "Pumunta sa Bahay",
   "mission_my_values": "ang aking mga pinahahalagahan",
-  "mission_and": ", at"
+  "mission_and": ", at",
+  "history_title": "Ang Iyong Mga Nai-save na Repleksyon",
+  "history_empty": "Wala ka pang nase-save na anumang pahayag ng misyon.",
+  "history_empty_hint": "Kapag handa ka na, gumawa ng isa at lilitaw ito rito.",
+  "history_back": "Bumalik",
+  "history_delete_aria": "Burahin ang repleksyong ito"
 }

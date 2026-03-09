@@ -5,6 +5,7 @@
   "intro_breath": "慢慢深呼吸。",
   "intro_no_wrong": "这里没有对错之分。",
   "intro_begin": "开始",
+  "intro_past_reflections": "过往的反思",
   "values_title": "现在什么对你来说最重要？",
   "values_subtitle": "选择 1-3 个让你感到踏实的价值观。",
   "values_next": "下一个",
@@ -42,5 +43,10 @@
   "mission_edit": "编辑",
   "mission_go_home": "返回首页",
   "mission_my_values": "我的价值观",
-  "mission_and": "， 和 "
+  "mission_and": "， 和 ",
+  "history_title": "你保存的思考",
+  "history_empty": "您尚未保存任何任务声明。",
+  "history_empty_hint": "准备就绪后，创建一个，它就会显示在这里。",
+  "history_back": "回去",
+  "history_delete_aria": "删除此反射"
 }

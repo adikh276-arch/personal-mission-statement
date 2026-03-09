@@ -5,6 +5,7 @@
   "intro_breath": "Hít một hơi thật chậm.",
   "intro_no_wrong": "Không có câu trả lời đúng hay sai ở đây.",
   "intro_begin": "Bắt đầu",
+  "intro_past_reflections": "Những suy ngẫm trong quá khứ",
   "values_title": "Điều gì có vẻ quan trọng đối với bạn ngay lúc này?",
   "values_subtitle": "Hãy chọn 1-3 giá trị mà bạn cảm thấy vững chắc.",
   "values_next": "Kế tiếp",
@@ -42,5 +43,10 @@
   "mission_edit": "Biên tập",
   "mission_go_home": "Quay về trang chủ",
   "mission_my_values": "giá trị của tôi",
-  "mission_and": ", Và "
+  "mission_and": ", Và ",
+  "history_title": "Những suy nghĩ bạn đã lưu",
+  "history_empty": "Bạn chưa lưu bất kỳ tuyên bố sứ mệnh nào.",
+  "history_empty_hint": "Khi bạn đã sẵn sàng, hãy tạo một cái và nó sẽ xuất hiện ở đây.",
+  "history_back": "Quay lại",
+  "history_delete_aria": "Xóa phản chiếu này"
 }

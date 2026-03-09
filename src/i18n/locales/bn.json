@@ -5,6 +5,7 @@
   "intro_breath": "ধীরে ধীরে একটা নিঃশ্বাস নাও।",
   "intro_no_wrong": "এখানে কোন সঠিক বা ভুল উত্তর নেই।",
   "intro_begin": "শুরু করুন",
+  "intro_past_reflections": "অতীতের প্রতিফলন",
   "values_title": "এখন কী গুরুত্বপূর্ণ মনে হচ্ছে?",
   "values_subtitle": "১-৩টি মান বেছে নিন যা ভিত্তিগত মনে হয়।",
   "values_next": "পরবর্তী",
@@ -42,5 +43,10 @@
   "mission_edit": "সম্পাদনা",
   "mission_go_home": "হোমে যান",
   "mission_my_values": "আমার মূল্যবোধ",
-  "mission_and": ", এবং"
+  "mission_and": ", এবং",
+  "history_title": "তোমার সংরক্ষিত প্রতিফলন",
+  "history_empty": "তুমি এখনও কোন মিশন স্টেটমেন্ট সংরক্ষণ করোনি।",
+  "history_empty_hint": "যখন আপনি প্রস্তুত হবেন, একটি তৈরি করুন এবং এটি এখানে প্রদর্শিত হবে।",
+  "history_back": "ফিরে যাও",
+  "history_delete_aria": "এই প্রতিফলনটি মুছে ফেলুন"
 }

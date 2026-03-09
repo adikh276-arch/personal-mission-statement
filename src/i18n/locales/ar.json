@@ -5,6 +5,7 @@
   "intro_breath": "خذ نفسًا بطيئًا واحدًا.",
   "intro_no_wrong": "لا توجد إجابات صحيحة أو خاطئة هنا.",
   "intro_begin": "يبدأ",
+  "intro_past_reflections": "تأملات الماضي",
   "values_title": "ما الذي يبدو مهماً الآن؟",
   "values_subtitle": "اختر من 1 إلى 3 قيم تشعرك بالاستقرار.",
   "values_next": "التالي",
@@ -42,5 +43,10 @@
   "mission_edit": "يحرر",
   "mission_go_home": "انتقل إلى الصفحة الرئيسية",
   "mission_my_values": "قيمي",
-  "mission_and": "، و "
+  "mission_and": "، و ",
+  "history_title": "تأملاتك المحفوظة",
+  "history_empty": "لم تقم بحفظ أي بيانات مهمة حتى الآن.",
+  "history_empty_hint": "عندما تكون مستعدًا، أنشئ حسابًا وسيظهر هنا.",
+  "history_back": "عُد",
+  "history_delete_aria": "احذف هذا التعليق"
 }

@@ -5,6 +5,7 @@
   "intro_breath": "Ambil satu napas perlahan.",
   "intro_no_wrong": "Tidak ada jawaban benar atau salah di sini.",
   "intro_begin": "Mulai",
+  "intro_past_reflections": "Refleksi Masa Lalu",
   "values_title": "Apa yang terasa penting saat ini?",
   "values_subtitle": "Pilih 1–3 nilai yang terasa menenangkan.",
   "values_next": "Berikutnya",
@@ -42,5 +43,10 @@
   "mission_edit": "Edit",
   "mission_go_home": "Kembali ke Beranda",
   "mission_my_values": "nilai-nilai saya",
-  "mission_and": ", Dan "
+  "mission_and": ", Dan ",
+  "history_title": "Refleksi yang Anda Simpan",
+  "history_empty": "Anda belum menyimpan pernyataan misi apa pun.",
+  "history_empty_hint": "Jika Anda sudah siap, buatlah dan itu akan muncul di sini.",
+  "history_back": "Kembali",
+  "history_delete_aria": "Hapus refleksi ini"
 }

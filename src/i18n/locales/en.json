@@ -5,6 +5,7 @@
   "intro_breath": "Take one slow breath.",
   "intro_no_wrong": "There are no right or wrong answers here.",
   "intro_begin": "Begin",
+  "intro_past_reflections": "Past Reflections",
   "values_title": "What feels important right now?",
   "values_subtitle": "Choose 1–3 values that feel grounding.",
   "values_next": "Next",
@@ -42,5 +43,10 @@
   "mission_edit": "Edit",
   "mission_go_home": "Go to Home",
   "mission_my_values": "my values",
-  "mission_and": ", and "
+  "mission_and": ", and ",
+  "history_title": "Your Saved Reflections",
+  "history_empty": "You haven't saved any mission statements yet.",
+  "history_empty_hint": "When you're ready, create one and it will appear here.",
+  "history_back": "Go Back",
+  "history_delete_aria": "Delete this reflection"
 }

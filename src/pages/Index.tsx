@@ -3,6 +3,7 @@ import IntroScreen from "@/components/screens/IntroScreen";
 import ValuesScreen from "@/components/screens/ValuesScreen";
 import ReflectionScreen from "@/components/screens/ReflectionScreen";
 import MissionScreen from "@/components/screens/MissionScreen";
+import HistoryScreen from "@/components/screens/HistoryScreen";
 
 export interface MissionData {
   values: string[];
@@ -22,7 +23,7 @@ const Index = () => {
 
   return (
     <div className="bg-background min-h-screen">
-      {screen === 0 && <IntroScreen onNext={() => goTo(1)} />}
+      {screen === 0 && <IntroScreen onNext={() => goTo(1)} onHistory={() => goTo(4)} />}
       {screen === 1 && (
         <ValuesScreen
           selected={data.values}
@@ -40,6 +41,7 @@ const Index = () => {
       {screen === 3 && (
         <MissionScreen data={data} onEdit={() => goTo(2)} onHome={() => goTo(0)} onChange={(d) => setData((prev) => ({ ...prev, ...d }))} />
       )}
+      {screen === 4 && <HistoryScreen onBack={() => goTo(0)} />}
     </div>
   );
 };

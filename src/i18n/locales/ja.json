@@ -1,12 +1,13 @@
 {
   "intro_title": "再接続の瞬間",
   "intro_p1": "落ち込んだり、不安になったり、圧倒されたりする時は、自分にとって本当に大切なことを見失いがちです。",
-  "intro_p2": "個人のミッションステートメントは、プレッシャーや生産性に関するものではありません。困難な時期であっても、自分がどんな人間でありたいかという、自分の価値観を優しく思い出させてくれるものです。",
+  "intro_p2": "個人のミッションステートメントは、プレッシャーや生産性に関するものではありません。困難な時期であっても、自分がどんな人間でありたいかという価値観を優しく思い出させてくれるものです。",
   "intro_breath": "ゆっくり息を吸いましょう。",
   "intro_no_wrong": "ここでは正しい答えも間違った答えもありません。",
   "intro_begin": "始める",
+  "intro_past_reflections": "過去の反省",
   "values_title": "今、何が重要だと感じますか?",
-  "values_subtitle": "根拠を感じる値を 1 ～ 3 つ選択します。",
+  "values_subtitle": "根拠を感じる値を 1～3 つ選択します。",
   "values_next": "次",
   "value_kindness": "親切",
   "value_peace": "平和",
@@ -42,5 +43,10 @@
   "mission_edit": "編集",
   "mission_go_home": "ホームへ戻る",
   "mission_my_values": "私の価値観",
-  "mission_and": "、 そして "
+  "mission_and": "、 そして ",
+  "history_title": "保存した感想",
+  "history_empty": "ミッションステートメントはまだ保存されていません。",
+  "history_empty_hint": "準備ができたら作成するとここに表示されます。",
+  "history_back": "戻る",
+  "history_delete_aria": "この反射を削除"
 }

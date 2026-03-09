@@ -4,9 +4,10 @@ import { useTranslation } from "react-i18next";
 
 interface IntroScreenProps {
   onNext: () => void;
+  onHistory: () => void;
 }
 
-const IntroScreen = ({ onNext }: IntroScreenProps) => {
+const IntroScreen = ({ onNext, onHistory }: IntroScreenProps) => {
   const { t } = useTranslation();
 
   return (
@@ -28,8 +29,11 @@ const IntroScreen = ({ onNext }: IntroScreenProps) => {
         </div>
       </div>
 
-      <div className="pt-8 pb-4">
+      <div className="pt-8 pb-4 space-y-3">
         <MissionButton onClick={onNext}>{t('intro_begin')}</MissionButton>
+        <MissionButton variant="outline" onClick={onHistory}>
+          {t('intro_past_reflections')}
+        </MissionButton>
       </div>
     </ScreenWrapper>
   );

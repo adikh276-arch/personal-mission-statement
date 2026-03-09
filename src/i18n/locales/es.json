@@ -5,6 +5,7 @@
   "intro_breath": "Tome una respiración lenta.",
   "intro_no_wrong": "Aquí no hay respuestas correctas o incorrectas.",
   "intro_begin": "Comenzar",
+  "intro_past_reflections": "Reflexiones pasadas",
   "values_title": "¿Qué te parece importante en este momento?",
   "values_subtitle": "Elige entre 1 y 3 valores que te resulten arraigados.",
   "values_next": "Próximo",
@@ -26,7 +27,7 @@
   "value_joy": "Alegría",
   "reflection_title": "Completa la oración",
   "reflection_being_label": "Incluso en los días difíciles, quiero ser alguien que ________.",
-  "reflection_being_placeholder": "p.ej. escucha con paciencia",
+  "reflection_being_placeholder": "p. ej. escucha con paciencia",
   "reflection_life_label": "En este momento, quiero que mi vida se sienta más ________.",
   "reflection_life_placeholder": "p. ej. pacífico y conectado",
   "reflection_create": "Crear mi estado de cuenta",
@@ -42,5 +43,10 @@
   "mission_edit": "Editar",
   "mission_go_home": "Ir a Inicio",
   "mission_my_values": "mis valores",
-  "mission_and": ", y "
+  "mission_and": ", y ",
+  "history_title": "Tus reflexiones guardadas",
+  "history_empty": "Aún no has guardado ninguna declaración de misión.",
+  "history_empty_hint": "Cuando esté listo, cree uno y aparecerá aquí.",
+  "history_back": "Volver",
+  "history_delete_aria": "Eliminar esta reflexión"
 }
