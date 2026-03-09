@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 import LanguageSelector from "@/components/LanguageSelector";
+import AuthGuard from "@/components/AuthGuard";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +19,7 @@ const App = () => (
       <BrowserRouter basename="/personal_mission_statement">
         <LanguageSelector />
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<AuthGuard><Index /></AuthGuard>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

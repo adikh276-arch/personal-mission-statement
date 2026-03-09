@@ -4,6 +4,8 @@ import MissionButton from "@/components/MissionButton";
 import { Trash2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+import { query } from "@/lib/db";
+
 export interface SavedMission {
     id: string;
     statement: string;
@@ -20,16 +22,33 @@ const HistoryScreen = ({ onBack }: HistoryScreenProps) => {
     const [missions, setMissions] = useState<SavedMission[]>([]);
 
     useEffect(() => {
-        const stored = localStorage.getItem("saved-missions");
-        if (stored) {
-            setMissions(JSON.parse(stored));
-        }
+        const fetchMissions = async () => {
+            try {
+                const userId = sessionStorage.getItem("user_id");
+                if (!userId) return;
+
+                const results = await query(
+                    "SELECT id, statement, values, created_at AS date FROM missions WHERE user_id = $1 ORDER BY created_at DESC",
+                    [userId]
+                );
+                setMissions(results);
+            } catch (err) {
+                console.error("Failed to fetch missions", err);
+            }
+        };
+        fetchMissions();
     }, []);
 
-    const handleDelete = (id: string) => {
-        const updated = missions.filter((m) => m.id !== id);
-        setMissions(updated);
-        localStorage.setItem("saved-missions", JSON.stringify(updated));
+    const handleDelete = async (id: string) => {
+        try {
+            const userId = sessionStorage.getItem("user_id");
+            if (!userId) return;
+
+            setMissions((prev) => prev.filter((m) => m.id !== id));
+            await query("DELETE FROM missions WHERE id = $1 AND user_id = $2", [id, userId]);
+        } catch (err) {
+            console.error("Failed to delete mission", err);
+        }
     };
 
     return (
