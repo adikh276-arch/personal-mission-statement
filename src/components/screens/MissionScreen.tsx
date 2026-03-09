@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ScreenWrapper from "@/components/ScreenWrapper";
 import MissionButton from "@/components/MissionButton";
 import { MissionData } from "@/pages/Index";
 import { toast } from "sonner";
+import { useTranslation } from "react-i18next";
 
 interface MissionScreenProps {
   data: MissionData;
@@ -12,14 +13,23 @@ interface MissionScreenProps {
 }
 
 const MissionScreen = ({ data, onEdit, onHome, onChange }: MissionScreenProps) => {
-  const valuesText = data.values.join(", ").replace(/, ([^,]*)$/, ", and $1") || "my values";
+  const { t } = useTranslation();
 
-  const [statement, setStatement] = useState(
-    `I choose to live with ${valuesText.toLowerCase()},\nand to be someone who ${data.beingSomeoneWho.toLowerCase()},\nso my life can feel more ${data.lifeFeelMore.toLowerCase()}.`
-  );
+  const valuesText = data.values
+    .map(v => t(v))
+    .join(", ")
+    .replace(/, ([^,]*)$/, `${t('mission_and')}$1`) || t('mission_my_values');
+
+  const [statement, setStatement] = useState("");
+
+  useEffect(() => {
+    setStatement(
+      `${t('mission_i_choose')}${valuesText.toLowerCase()},\n${t('mission_and_to_be')}${data.beingSomeoneWho.toLowerCase()},\n${t('mission_so_my_life')}${data.lifeFeelMore.toLowerCase()}.`
+    );
+  }, [t, valuesText, data.beingSomeoneWho, data.lifeFeelMore]);
 
   const handleSave = () => {
-    toast.success("Your mission statement has been saved.", {
+    toast.success(t('mission_saved'), {
       style: {
         background: "hsl(300, 18%, 95%)",
         color: "hsl(280, 15%, 22%)",
@@ -32,7 +42,7 @@ const MissionScreen = ({ data, onEdit, onHome, onChange }: MissionScreenProps) =
     <ScreenWrapper screenKey="mission">
       <div className="flex-1 space-y-8">
         <h1 className="text-[22px] font-heading text-foreground text-center">
-          Your Personal Mission
+          {t('mission_title')}
         </h1>
 
         <textarea
@@ -48,18 +58,18 @@ const MissionScreen = ({ data, onEdit, onHome, onChange }: MissionScreenProps) =
         />
 
         <div className="space-y-4 text-[15px] font-body text-muted-foreground leading-[1.65] text-center">
-          <p>This is not a rule.<br />It is a reminder.</p>
-          <p>You can return to it whenever you need direction.</p>
+          <p>{t('mission_not_rule')}<br />{t('mission_is_reminder')}</p>
+          <p>{t('mission_return_whenever')}</p>
         </div>
       </div>
 
       <div className="pt-8 pb-4 space-y-3">
-        <MissionButton onClick={handleSave}>Save</MissionButton>
+        <MissionButton onClick={handleSave}>{t('mission_save')}</MissionButton>
         <MissionButton variant="outline" onClick={onEdit}>
-          Edit
+          {t('mission_edit')}
         </MissionButton>
         <MissionButton variant="outline" onClick={onHome}>
-          Go to Home
+          {t('mission_go_home')}
         </MissionButton>
       </div>
     </ScreenWrapper>

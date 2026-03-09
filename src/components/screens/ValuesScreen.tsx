@@ -2,24 +2,25 @@ import { useState } from "react";
 import ScreenWrapper from "@/components/ScreenWrapper";
 import MissionButton from "@/components/MissionButton";
 import ValueChip from "@/components/ValueChip";
+import { useTranslation } from "react-i18next";
 
 const VALUES = [
-  "Kindness",
-  "Peace",
-  "Connection",
-  "Honesty",
-  "Patience",
-  "Courage",
-  "Self-compassion",
-  "Gratitude",
-  "Creativity",
-  "Growth",
-  "Rest",
-  "Love",
-  "Simplicity",
-  "Freedom",
-  "Purpose",
-  "Joy",
+  { key: "value_kindness", label: "Kindness" },
+  { key: "value_peace", label: "Peace" },
+  { key: "value_connection", label: "Connection" },
+  { key: "value_honesty", label: "Honesty" },
+  { key: "value_patience", label: "Patience" },
+  { key: "value_courage", label: "Courage" },
+  { key: "value_self_compassion", label: "Self-compassion" },
+  { key: "value_gratitude", label: "Gratitude" },
+  { key: "value_creativity", label: "Creativity" },
+  { key: "value_growth", label: "Growth" },
+  { key: "value_rest", label: "Rest" },
+  { key: "value_love", label: "Love" },
+  { key: "value_simplicity", label: "Simplicity" },
+  { key: "value_freedom", label: "Freedom" },
+  { key: "value_purpose", label: "Purpose" },
+  { key: "value_joy", label: "Joy" },
 ];
 
 interface ValuesScreenProps {
@@ -29,6 +30,8 @@ interface ValuesScreenProps {
 }
 
 const ValuesScreen = ({ selected, onSelect, onNext }: ValuesScreenProps) => {
+  const { t } = useTranslation();
+
   const toggle = (value: string) => {
     if (selected.includes(value)) {
       onSelect(selected.filter((v) => v !== value));
@@ -41,20 +44,20 @@ const ValuesScreen = ({ selected, onSelect, onNext }: ValuesScreenProps) => {
     <ScreenWrapper screenKey="values">
       <div className="flex-1 space-y-6">
         <h1 className="text-[22px] font-heading text-foreground text-center">
-          What feels important right now?
+          {t('values_title')}
         </h1>
 
         <p className="text-[15px] font-body text-muted-foreground leading-[1.65] text-center">
-          Choose 1–3 values that feel grounding.
+          {t('values_subtitle')}
         </p>
 
         <div className="flex flex-wrap gap-3 justify-center">
           {VALUES.map((v) => (
             <ValueChip
-              key={v}
-              label={v}
-              selected={selected.includes(v)}
-              onToggle={() => toggle(v)}
+              key={v.key}
+              label={t(v.key)}
+              selected={selected.includes(v.key)}
+              onToggle={() => toggle(v.key)}
             />
           ))}
         </div>
@@ -62,7 +65,7 @@ const ValuesScreen = ({ selected, onSelect, onNext }: ValuesScreenProps) => {
 
       <div className="pt-8 pb-4">
         <MissionButton onClick={onNext} disabled={selected.length === 0}>
-          Next
+          {t('values_next')}
         </MissionButton>
       </div>
     </ScreenWrapper>
