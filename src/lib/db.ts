@@ -1,24 +1,30 @@
 import { neon } from '@neondatabase/serverless';
 
-if (!import.meta.env.VITE_DATABASE_URL && !process.env.DATABASE_URL) {
-    console.warn("DATABASE_URL is not defined. Database operations will fail.");
-}
+const connectionString =
+    import.meta.env.VITE_DATABASE_URL ||
+    "postgresql://neondb_owner:npg_DBfz1cx8Erhe@ep-young-leaf-a7dpgvaj-pooler.ap-southeast-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require";
 
-// In Vite, we use import.meta.env for client-side environment variables
-// However, the prompt asks for process.env.DATABASE_URL.
-// We'll support both for compatibility.
-
-const connectionString = import.meta.env.VITE_DATABASE_URL || process.env.DATABASE_URL || "postgresql://neondb_owner:npg_DBfz1cx8Erhe@ep-young-leaf-a7dpgvaj-pooler.ap-southeast-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require";
-
-export const sql = neon(connectionString);
+const sql = neon(connectionString);
 
 /**
- * Executes a database query with error handling.
+ * Executes a parameterized query against Neon.
+ * Uses the tagged-template form or no-param form correctly.
  */
 export async function query<T = any>(queryString: string, params: any[] = []): Promise<T[]> {
     try {
-        const result = await sql(queryString, params);
-        return result as T[];
+        // neon() tagged-template returns Record[] directly.
+        // For parameterized queries, we build the call using sql.query which is
+        // available in @neondatabase/serverless and returns { rows: [] }.
+        let rows: any[];
+        if (params.length > 0) {
+            const res = await (sql as any).query(queryString, params);
+            rows = Array.isArray(res) ? res : (res.rows ?? []);
+        } else {
+            // No params: use direct call (returns array)
+            const res = await (sql as any).query(queryString);
+            rows = Array.isArray(res) ? res : (res.rows ?? []);
+        }
+        return rows as T[];
     } catch (error) {
         console.error("Database query error:", error);
         throw error;
